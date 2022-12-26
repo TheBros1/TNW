@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TNW</title>
+    <link rel="icon" href="zyro-image (2).png">
+    <style>
+        .flex{
+            display: flex;
+            column-gap: 25px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .logo1{
+            height: 75px;
+            width: 75px;
+            margin-top: -25px;
+            margin-bottom: 25px;
+            margin-left: 25px;
+        }
+        .top-button{
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: -40px;
+            transition: text-decoration, 1s;
+        }
+        .header{
+            background-color: gray;
+            margin-top: -25px;
+            padding-top: 15px;
+            margin-left: -25px;
+            margin-right: -25px;
+        }
+        .top-button::after{
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: blue;
+            display: block;
+            transition: .5s ease-in-out;
+        }
+        .top-button:hover::after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: purple;
+            display: block;
+        }
+        .body{
+            background-color: black;
+            overflow: hidden;
+        }
+        .logo2{
+            display: block;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .a{
+            margin-top: 7px;
+        }
+        .youtube1{
+            height: 30px;
+            position: relative;
+            z-index: 2;
+            transition: opacity .30s;
+        }
+        .youtube2{
+            height: 30px;
+            position: relative;
+            z-index: 1;
+            top: 0px;
+            left: -34px;
+        }
+        .youtube1:hover{
+            opacity: 0;
+        }
+        
+    </style>
+</head>
+
+<body class="body">
+        
+</body>
+<header class="header">
+    <div class="flex">
+        <image src="zyro-image (2).png" class="logo1"></image>
+        <a href="index.html" class="a">
+            <button class="top-button">Home</button>
+        </a>
+        <a href="merch.html" class="a">
+            <button class="top-button">Merch</button>
+        </a>
+        <a href="episodes.html" class="a">
+            <button class="top-button">Episodes</button>
+        </a>
+        <a href="characters.html" class="a">    
+            <button class="top-button">Characters</button>
+        </a>
+        <a href="other.html" class="a">
+            <button class="top-button">Other Sites</button>
+        </a>
+        <a href="crew.html" class="a">
+            <button class="top-button">The Crew</button>
+        </a>
+        <a href="behindthescenes.html" class="a">
+            <button class="top-button">Behind the Scenes</button>
+        </a>
+        <a href="https://www.youtube.com/@NonsensicalStudios">
+            <div class="youtube">
+                <image src="blackwhite.png" class="youtube1"></image>
+                <image src="whiteblack.png" class="youtube2"></image>
+            </div>
+        </a>
+    </div>
+</header>
+
+<footer>
+    <image src="image.png" class="logo2"></image>
+</footer>
+</html>
